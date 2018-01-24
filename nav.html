@@ -1,0 +1,73 @@
+<div class="wrapper">
+    <a href="index.html"><div class="logo"><img class="large" src="img/varitec-logo.png"/><img class="small" src="img/varitec-logo-small.png"/></div></a>
+    <ul class="effect-swing">
+        <li>
+            <a href="about.html">
+                <span>about varitec</span>
+                <ul>
+                    <li><a href="careers.html"><span>careers</span></a></li>
+                    <li><a href="showcase.html"><span>showcase</span></a></li>
+                    <li><a href="about-history.html"><span>Our History</span></a></li>
+                    <li><a href="about-locations.html"><span>Our Locations</span></a></li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="products.html">
+                <span>products</span>
+                <ul>
+                    <li><a href="products-engineered-solutions.html"><span>HVAC Solutions</span></a></li>
+                    <li><a href="products-air-distribution.html"><span>Air Distribution</span></a></li>
+                    <li><a href="products-industrial-compressed-air-products.html"><span>Air Products</span></a></li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="specialties.html">
+                <span>specialties</span>
+                <ul>
+                    <li><a href="specialties-healthcare.html"><span>healthcare</span></a></li>
+                    <li><a href="specialties-education.html"><span>education</span></a></li>
+                    <li><a href="specialties-public-works.html"><span>public works</span></a></li>
+                    <li><a href="specialties-commercial-solutions.html"><span>commercial solutions</span></a></li>
+                    <li><a href="specialties-data-centers.html"><span>data centers</span></a></li>
+                    <li><a href="specialties-hospitality.html"><span>hospitality</span></a></li>
+                    <li><a href="specialties-industrial.html"><span>industrial</span></a></li>
+                    <li><a href="specialties-government.html"><span>government</span></a></li>
+                    <li><a href="specialties-manufacturing.html"><span>manufacturing</span></a></li>
+                    <li><a href="specialties-small-business.html"><span>small business</span></a></li>
+                    <li><a href="specialties-custom-homes.html"><span>custom homes</span></a></li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="training.html">
+                <span>training</span>
+                <ul>
+                    <li><a href="training-schedule.html"><span>schedule</span></a></li>
+                    <li><a href="training-courses.html"><span>courses</span></a></li>
+                    <li><a href="training-register.html"><span>register</span></a></li>
+                </ul>
+            </a>
+        </li>
+        <li><a href="panelshop.html">panel shop</a></li>
+        <li>
+            <a href="contact.html">
+                <span>contact</span>
+                <ul>
+                    <li><a href="about-locations.html"><span>locations</span></a></li>
+                </ul>
+            </a>
+        </li>
+        <li><a class="button" target="_blank" href="http://shopvaritec.com">shop</a></li>
+        <div class="nav-button effect-swing"><img src="img/nav-button-gray.png"/></div>
+    </ul>
+</div>
+<script>
+    var white = $('nav').hasClass('white') ? true : false; //check if it starts white
+    $(window).scroll(function (event) {
+        if($(window).scrollTop()==0 && !white) { $('nav').removeClass('white'); }
+        else { $('nav').attr('class','white effect-swing');  }
+    });
+    function setNav(i){ $('nav').find('ul a').eq(i).addClass('active effect-swing'); }
+</script>

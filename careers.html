@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Varitec Solutions</title>
+		<meta name="description" content="varitec solutions hvac">
+		<meta name="author" content="jacob debenedetto">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+		<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+	</head>
+	<body>
+        <nav class="white"></nav>
+        
+        <div class="header2" style="background-image: url('img/products-background-img.jpg')">
+            <h2>Careers</h2>
+            <p>Representing the world's leading HVAC brands</p>
+        </div>
+
+        <section class="">
+            <div class="wrapper pad-side">
+                <div class="row">
+                    <div class="left-nav col-md-3"></div>
+                    <div class="col-md-9">
+                        <h2>About Varitec Careers and Opportunities</h2>
+                        <p>Our team is passionate about connecting our clients with the right HVAC solutions. Varitec’s experienced staff provides the fans and air distribution equipment needed to keep air moving through the HVAC system. We are looking to hire expertise that can perform the same quality in this growing industry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer></footer>
+
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.vide.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+        <script>
+            //Load content
+            $(document).ready(function () {
+                $('nav').load('nav.html');
+                $('.left-nav').load('career-nav.html',function(){ setLeftNav(0); });
+                $('footer').load('footer.html');
+            });
+        </script>
+	</body>
+</html>

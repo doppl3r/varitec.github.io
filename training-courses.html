@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Varitec Solutions</title>
+		<meta name="description" content="varitec solutions hvac">
+		<meta name="author" content="jacob debenedetto">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/stylesheet.css">
+		<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+	</head>
+	<body>
+        <nav class="white"></nav>
+        
+        <div class="header2" style="background-image: url('img/about-header-main-a.jpg')">
+            <h2>training</h2>
+            <h2>excellence</h2>
+            <h3>40 Years of educating professionals in HVAC</h3>
+        </div>
+
+        <section>
+            <div class="wrapper pad-side panel">
+                <div class="row">
+                    <div class="left-nav col-md-4"></div>
+                    <div class="col-md-8">
+                        <h2 style="padding-bottom:0;">Varitec Courses</h2>
+                        <p>Learn about courses like factory certified installation procedures, start-up procedures, trouble shooting and more.</p>
+                        <div class="location">
+                            <h3>Course Schedule</h3>
+                            <div class="row">
+                                <div class="col-md-3"><img src="img/course-thumb-1.jpg"/></div>
+                                <div class="col-md-9">
+                                    <h4>Coming soon</h4>
+                                    <p>Check back for details and course schedules</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer></footer>
+        
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.vide.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+		<script>
+            $(document).ready(function () {
+                $('nav').load('nav.html',function(){ setNav(0); });
+                $('.left-nav').load('training-nav.html',function(){ setLeftNav(2); });
+                $('footer').load('footer.html');
+            });
+            $('.more').parent('ul').has('.more').find('li').css('display','none');
+            $('.more').click(function() { $(this).parent('ul').find('li').fadeToggle('slow'); });
+            $('.location div').addClass('collapsed');
+            $('.location h3').click(function() { $(this).parent('.location').find('div').fadeToggle("slow").toggleClass('collapsed'); $(this).parent('.location').find('h3').toggleClass('collapsed'); });
+		</script>
+	</body>
+</html>

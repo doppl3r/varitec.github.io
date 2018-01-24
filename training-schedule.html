@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Varitec Solutions</title>
+		<meta name="description" content="varitec solutions hvac">
+		<meta name="author" content="jacob debenedetto">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/stylesheet.css">
+		<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+	</head>
+	<body>
+        <nav class="white"></nav>
+        
+        <div class="header2" style="background-image: url('img/about-header-main-a.jpg')">
+            <h2>training</h2>
+            <h2>excellence</h2>
+            <h3>40 Years of educating professionals in HVAC</h3>
+        </div>
+        
+        <section>
+            <div class="wrapper pad-side">
+                <div class="row">
+                    <div class="left-nav col-md-4"></div>
+                    <div class="col-md-8">
+                        <h3>Request a Training Date</h3>
+                        <p>If you would like to request a training date for you or your clients, please contact us using the options below.</p>
+                        <div class="row training-schedule-options">
+                            <a href="tel:6029431511" class="col-xs-4 item">
+                                <div>
+                                    <i class="material-icons">settings_phone</i>
+                                    <p class="header">602.943.1511</p>
+                                    <p class="sub-header">call directly</p>
+                                </div>
+                            </a>
+                            <a target="_blank" href="mailto:info@varitecsolutions.com?Subject=Contacting Varitec" class="col-xs-4 item">
+                                <div>
+                                    <i class="material-icons">email</i>
+                                    <p class="header">Email</p>
+                                    <p class="sub-header">info@varitecsolutions.com</p>
+                                </div>
+                            </a>
+                            <a href="training-register.html" class="col-xs-4 item">
+                                <div>
+                                    <i class="material-icons">assignment_turned_in</i>
+                                    <p class="header">Contact Form</p>
+                                    <p class="sub-header">email alternative</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer></footer>
+        
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.vide.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+		<script>
+            $(document).ready(function () {
+                $('nav').load('nav.html',function(){ setNav(0); });
+                $('.left-nav').load('training-nav.html',function(){ setLeftNav(1); });
+                $('footer').load('footer.html');
+            });
+		</script>
+	</body>
+</html>
