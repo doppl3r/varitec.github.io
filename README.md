@@ -19,4 +19,11 @@ In order to continually compile for deployment, you must install the Node.js Sas
 
 The project 'tasks.json' file has predefined rules where the .css file will be compiled. Simply build the project by pressing ```ctrl + shift + b``` or enter ```> tasks: run build task``` into the VSCode ```'View' > 'Command Pallete'``` input field. You only need to build if you edit the .scss file.
 
-When you are ready to update the changes to the main varitecsolutions.com website, set up the FTP instructions on your local machine and upload the new code to the root directory.
+### Update to Live Website
+When you are ready to update the changes to the main varitecsolutions.com website, simply run the following commands from your git command line:
+- ```git pull```
+- ```git add .```
+- ```git commit -m "updated page copy"```
+- ```git push```
+
+Optional: You can always edit any page directly through github if you select the 'edit' (pencil) icon on the active page.
